@@ -1,6 +1,7 @@
 const search = (haystack, needle) =>{
+    debugger
     let low = 0;
-    let high = 0;
+    let high = haystack.length;
     do{
         const m = Math.floor(low + (high - low) / 2);
         const value = haystack[m];
@@ -20,3 +21,7 @@ const search = (haystack, needle) =>{
 
     return false;
 }
+
+let array = [1,6,7,9,11,15,19,23,14,16,2];
+
+search(array.sort(), 16);
