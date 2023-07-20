@@ -1,5 +1,4 @@
 const bubbleSearch = (array) =>{
-     debugger
     for(let i = 0; i < array.length; ++i)
     {
         for (let j = 0; j < array.length - 1 - i; ++j) 
@@ -13,9 +12,8 @@ const bubbleSearch = (array) =>{
 
         }
     }
-
+    return(array);
 }
-
 let example = [78,1,45,35,144,2,47,96,38,74,12,25,96,54,21];
-
-bubbleSearch(example);
+console.log(bubbleSearch(example));
+bubbleSearch(example); 
